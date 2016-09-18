@@ -54,7 +54,7 @@ public class InMemoryTransactionModel implements TransactionModel {
 
         result += getTransitiveChildrenIds(id)
                     .parallelStream()
-                    .mapToDouble( childId -> getTransaction(childId).orElse(new Transaction()).getAmount() )
+                    .mapToDouble( childId -> getTransaction(childId).get().getAmount() )
                     .sum();
 
         return result;

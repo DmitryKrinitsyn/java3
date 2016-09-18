@@ -6,21 +6,21 @@ import com.home.model.StatusType;
  * Created by dmitry on 9/17/16.
  */
 public class Status {
-    private StatusType statusType;
+    private StatusType status;
 
     public Status() {
-        statusType = StatusType.failed;
+        status = StatusType.failed;
     }
 
-    public Status(StatusType statusType) {
-        this.statusType = statusType;
+    public Status(StatusType status) {
+        this.status = status;
     }
 
-    public StatusType getStatusType() {
-        return statusType;
+    public StatusType getStatus() {
+        return status;
     }
 
-    public void setStatusType(StatusType statusType) {
-        this.statusType = statusType;
+    public void setStatus(StatusType status) {
+        this.status = status;
     }
 }
