@@ -36,4 +36,6 @@ public class TransactionController {
         return new Sum( model.getTransitiveSum(id) );
     }
 
+
+
 }
